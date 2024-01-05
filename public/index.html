@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/styles/styles.css">
+  <link rel="icon" href="/favicon.ico" type="image/x-icon">
+  <title>Dimitar Raychev</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/c56ecc54f5.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+  <header>
+    <nav>
+      <i id="menu-icon" class="fa-solid fa-bars"></i>
+      <ul id="nav" class="hidden">
+        <li><a href="#contacts">CONTACTS</a></li>
+        <li><a href="#projects">PROJECTS</a></li>
+        <li><a href="#experience-skills">EXPERIENCE/SKILLS</a></li>
+        <li><a href="#">ABOUT</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+
+    <canvas id="bg"></canvas>
+
+    <div class="progress-bar-container">
+      <label for="progress-bar">Loading...</label>
+      <progress id="progress-bar" value="0" max="100"></progress>
+    </div>
+
+    <dialog>
+      <i id="prev-btn" class="fa-solid fa-circle-arrow-left"></i>
+      <img id="cert-img" src="/images/certificates/su-applications.jpeg" alt="">
+      <i id="next-btn" class="fa-solid fa-circle-arrow-right"></i>
+    </dialog>
+
+    <div id="view">
+
+      <section id="home" class="section">
+        <p class="about-view">{about}</p>
+        <h1 class="home-title">Dimitar Raychev<br>Junior Developer*</h1>
+        <p class="home-asterisk">*a magician who turns caffeine into code.</p>
+        <p class="home-info">Hey there, digital explorer! 🚀 I'm a passionate developer based in the vibrant city of
+          Sofia, Bulgaria, where I cultivated my skills at the Software University. JavaScript is my language of choice,
+          and with it, I
+          enjoy turning challenges into elegantly crafted solutions. Beyond the world of code, I enjoy exploring the
+          vast realms
+          of blockchain and web3 technology.</p>
+        <p class="about-view">{about}</p>
+        <img id="scroll-img" src="/images/scroll.png" alt="">
+
+      </section>
+
+      <section id="experience-skills" class="section">
+        <p class="exp-view">{experience/skills}</p>
+
+        <div id="experience">
+          <h3>Experience</h3>
+          <div class="exp-container">
+            <div class="exp-header">
+              <p class="exp-company">IT Technical Support @ Akkodis</p>
+              <div class="header-right">
+                <p class="exp-timeframe">2022 - Present</p>
+                <i class="fa-solid fa-minus exp-icon"></i>
+              </div>
+            </div>
+
+            <div class="exp-info-container recent">
+              <div class="exp-info">
+                <div class="exp-info-top">
+                  <div class="location">
+                    <i class="fa-solid fa-location-dot"></i>
+                    <p>Sofia, Bulgaria</p>
+                  </div>
+                  <div class="website">
+                    <i class="fa-solid fa-globe"></i>
+                    <a href="https://www.akkodis.com/">akkodis.com</a>
+                  </div>
+                </div>
+                <div class="exp-info-mid">
+                  <p>
+                    Providing top-tier IT technical support in English for a wide array of software and hardware
+                    products, utilizing diverse communication channels for a seamless and professional resolution
+                    experience.
+                  </p>
+                </div>
+                <div class="exp-info-bottom">
+                  <ul>
+                    <li>Jira</li>
+                    <li>AD</li>
+                    <li>SAP</li>
+                    <li>SCCM</li>
+                    <li>Citrix</li>
+                    <li>AWS</li>
+                  </ul>
+                </div>
+              </div>
+              <div class="logo-container">
+                <img src="/images/akkodis-logo.png" alt="Company Logo">
+              </div>
+            </div>
+          </div>
+
+          <div class="exp-container">
+            <div class="exp-header">
+              <p class="exp-company">IT Systems Integration Associate @ TRG</p>
+              <div class="header-right">
+                <p class="exp-timeframe">2019 - 2022</p>
+                <i class="fa-solid fa-plus exp-icon"></i>
+              </div>
+            </div>
+
+            <div class="exp-info-container">
+              <div class="exp-info">
+                <div class="exp-info-top">
+                  <div class="location">
+                    <i class="fa-solid fa-location-dot"></i>
+                    <p>Sofia, Bulgaria</p>
+                  </div>
+                  <div class="website">
+                  </div>
+                </div>
+                <div class="exp-info-mid">
+                  <p>Actively contributing to the design and construction of video surveillance systems and office
+                    computer networks, offering continuous support and ensuring the seamless operation of various
+                    computer and laptop
+                    configurations.
+                  </p>
+                </div>
+                <div class="exp-info-bottom">
+                  <ul>
+                    <li>Windows</li>
+                    <li>BIOS</li>
+                    <li>Hardware</li>
+                  </ul>
+                </div>
+              </div>
+              <div class="logo-container">
+                <img src="/images/trg-logo.png" alt="Company Logo">
+              </div>
+            </div>
+          </div>
+
+          <div class="exp-container">
+            <div class="exp-header">
+              <p class="exp-company">Integrated Systems Representative @ MMG</p>
+              <div class="header-right">
+                <p class="exp-timeframe">2016 - 2019</p>
+                <i class="fa-solid fa-plus exp-icon"></i>
+              </div>
+            </div>
+
+            <div class="exp-info-container">
+              <div class="exp-info">
+                <div class="exp-info-top">
+                  <div class="location">
+                    <i class="fa-solid fa-location-dot"></i>
+                    <p>Sofia, Bulgaria</p>
+                  </div>
+                  <div class="website">
+                    <i class="fa-solid fa-globe"></i>
+                    <a href="https://mmg.bg/">mmg.bg</a>
+                  </div>
+                </div>
+                <div class="exp-info-mid">
+                  <p>Maintaining a comprehensive understanding of video surveillance, access control, automation, and
+                    smart home systems, while providing consultations and services both in-person and via various
+                    channels.
+                  </p>
+                </div>
+                <div class="exp-info-bottom">
+                  <ul>
+                    <li>Mobotix</li>
+                    <li>Milesight</li>
+                    <li>Loxone</li>
+                  </ul>
+                </div>
+              </div>
+              <div class="logo-container">
+                <img src="/images/mmg-logo.png" alt="Company Logo">
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+        <div id="skills">
+          <div id="skills-container" class="skills-list">
+            <h3>Skills</h3>
+            <ul>
+              <li>JavaScript</li>
+              <li>HTML</li>
+              <li>CSS</li>
+              <li>Git</li>
+              <li>npm</li>
+              <li>Three.js</li>
+              <li>GSAP</li>
+              <li>Mocha</li>
+              <li>Chai</li>
+              <li>Scrum</li>
+            </ul>
+          </div>
+          <div id="tools-container" class="skills-list">
+            <h3>Tools</h3>
+            <ul>
+              <li>VS Code</li>
+              <li>GitHub</li>
+              <li>Postman</li>
+              <li>Chrome DevTools</li>
+              <li>Jira</li>
+              <li>BaaS</li>
+            </ul>
+          </div>
+          <button id="cert-btn" role="button">Certificates</button>
+        </div>
+
+
+        <p class="exp-view">{experience/skills}</p>
+      </section>
+
+      <section id="projects" class="section">
+        <p class="projects-view">{projects}</p>
+
+        <div id="projects-container">
+          <div class="project">
+            <h4 class="project-name">TechGrit Demo Website</h4>
+            <p class="project-description">Explore an interactive website showcasing a user-friendly authentication
+              experience seamlessly
+              integrated with a comprehensive suite of CRUD functionalities.
+            </p>
+            <ul class="project-tools">
+              <li>JS</li>
+              <li>Page.js</li>
+              <li>Lit-HTML</li>
+              <li>Firebase</li>
+            </ul>
+          </div>
+
+          <div class="project">
+            <h4 class="project-name">Metaverse Explorer Game</h4>
+            <p class="project-description">
+              Embark on an adventure highlighting DOM interactions, modular coding principles and
+              separation of concerns, all accomplished with Vanilla JavaScript.
+            </p>
+            <ul class="project-tools">
+              <li>JS</li>
+              <li>Firebase</li>
+            </ul>
+          </div>
+
+          <div class="project">
+            <h4 class="project-name">Coming soon...</h4>
+            <p class="project-description"></p>
+            <ul class="project-tools">
+              <li></li>
+              <li></li>
+              <li></li>
+            </ul>
+          </div>
+        </div>
+
+        <p class="projects-view">{projects}</p>
+      </section>
+
+      <section id="contacts" class="section">
+        <p class="contacts-view">{contacts}</p>
+
+        <div id="contacts-container">
+          <a href="https://github.com/dimitarraychev" target="_blank" class="link"><i
+              class="fa-brands fa-github"></i></a>
+          <a href="https://linkedin.com/in/dimitaraychev" target="_blank" class="link"><i
+              class="fa-brands fa-linkedin-in"></i></a>
+          <div class="email-container">
+            <i class="fa-regular fa-paper-plane"></i>
+            <p class="email-copy">Email copied!</p>
+          </div>
+        </div>
+
+        <p class="contacts-view">{contacts}</p>
+      </section>
+
+    </div>
+
+  </main>
+
+  <footer>
+    <p>&copy;2024 Dimitar Raychev</p>
+  </footer>
+
+  <script type="module" src="/scripts/main.js"></script>
+</body>
+
+</html>

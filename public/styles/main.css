@@ -1,0 +1,175 @@
+html {
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    font-family: 'Inter', sans-serif;
+    background-color: black;
+    user-select: none;
+}
+
+header {
+    z-index: 3;
+    color: white;
+    width: 100vw;
+}
+
+#menu-icon {
+    position: fixed;
+    font-size: 32px;
+    padding: 0.5em;
+}
+
+#menu-icon:hover {
+    cursor: pointer;
+    filter: brightness(0.8);
+}
+
+nav ul {
+    position: fixed;
+    margin-top: 4em;
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    writing-mode: vertical-rl;
+    font-size: 16px;
+    gap: 2em;
+    padding: 0.3em;
+    transform: rotate(180deg);
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+}
+
+nav ul:hover {
+    cursor: pointer;
+}
+
+nav ul li:hover {
+    text-decoration: underline;
+}
+
+main {
+    min-height: 100vh;
+    width: 100vw;
+}
+
+footer {
+    position: relative;
+    z-index: 2;
+    color: white;
+    display: flex;
+    margin: auto;
+}
+
+footer p {
+    text-align: center;
+}
+
+#view {
+    z-index: 2;
+    position: relative;
+    min-height: 100vh;
+    width: 100vw;
+}
+
+canvas {
+    z-index: 1;
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+.progress-bar-container {
+    position: absolute;
+    z-index: 3;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 1);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#progress-bar {
+    width: 30%;
+    margin-top: 0.5%;
+    height: 2%;
+    background-color: #000000;
+}
+
+#progress-bar::-webkit-progress-bar {
+    border-radius: 20px;
+    background-color: #000000;
+}
+
+#progress-bar::-webkit-progress-value {
+    background: linear-gradient(45deg, #180331, #0a3c4e);
+    border-radius: 20px;
+}
+
+label {
+    font-style: italic;
+    color: white;
+    font-size: 1.5rem;
+    width: 30%;
+}
+
+::-webkit-scrollbar {
+    width: 1px;
+}
+
+::-webkit-scrollbar-track {
+    background: #1a1a1a;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #333;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
+
+.hidden {
+    display: none;
+}
+
+dialog {
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background:rgba(0, 0, 0, 0.8);
+    user-select: none;
+}
+
+dialog i {
+    font-size: 3em;
+    margin: 16px;
+    color: rgba(18, 69, 103, 1);
+    filter: brightness(1.5);
+}
+
+dialog i:hover {
+    cursor: pointer;
+    filter: brightness(1);
+}
+
+#cert-img {
+    height: 90vh;
+    width: 35vw;
+    object-fit: contain;
+    overflow: hidden;
+}
