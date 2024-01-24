@@ -1,6 +1,5 @@
 import * as THREE from 'https://cdn.jsdelivr.net/npm/three@0.160.0/build/three.module.js';
 
-// Ring
 export function addRing(scene) {
 	const geometry = new THREE.TorusGeometry(5, 1.5, 32, 200);
 	const material = new THREE.MeshBasicMaterial({ color: 0xFF6347, wireframe: true });
@@ -13,7 +12,6 @@ export function addRing(scene) {
 	return torus;
 }
 
-// Stars
 const starGeometry = new THREE.SphereGeometry(0.25)
 const starMaterial = new THREE.MeshStandardMaterial({ color: 0x124567, roughness: 0.5 });
 
@@ -31,7 +29,6 @@ export function addStars(scene) {
 	Array(300).fill().forEach(el => createStar(scene));
 }
 
-// Moon
 let updateTexture;
 
 const moonTexture = new THREE.TextureLoader().load('./images/moonmap.jpg', function (texture) {updateTexture(texture)});

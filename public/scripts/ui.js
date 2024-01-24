@@ -22,6 +22,8 @@ const images = [
 	"/images/certificates/su-advanced.jpeg",
 	"/images/certificates/su-fundamentals.jpeg",
 	"/images/certificates/su-basics.jpeg",
+	"/images/certificates/mon-applications.jpg",
+	"/images/certificates/mon-advanced.jpg",
 	"/images/certificates/mon-fundamentals.jpg",
 	"/images/certificates/mon-basics.jpg"
 ];

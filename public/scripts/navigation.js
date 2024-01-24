@@ -12,16 +12,6 @@ export function navigateTo(event, camera) {
 	} 
 }
 
-function moveCamera(camera, x, y, z) {
-	gsap.to(camera.position, {
-		x,
-		y,
-		z,
-		duration: 1,
-		ease: 'power2.out'
-	});
-}
-
 export function shakeObject(object) {
 	gsap.to(object.position, {
 		duration: 0.5,
@@ -30,5 +20,15 @@ export function shakeObject(object) {
 		repeat: 3,
 		ease: "power2.inOut",
 		onComplete: (e) => { object.shaking = false }
+	});
+}
+
+function moveCamera(camera, x, y, z) {
+	gsap.to(camera.position, {
+		x,
+		y,
+		z,
+		duration: 1,
+		ease: 'power2.out'
 	});
 }
