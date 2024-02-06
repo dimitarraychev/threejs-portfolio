@@ -1,5 +1,5 @@
 import * as THREE from 'https://cdn.jsdelivr.net/npm/three@0.160.0/build/three.module.js';
-import { GLTFLoader } from './util/GLTFLoader.js';
+import { GLTFLoader } from './lib/GLTFLoader.js';
 import { addStars, addMoon, addRing } from './elements.js';
 import { clickOnElement, copyEmail, mouseParallaxEffect, onMouseWheel, onWindowResize } from './eventHandlers.js';
 import { navigateTo } from './navigation.js';
